@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index1.html">Home</a>
+    <a href="Mens.html">Men's</a>
+    <a href="Women.html">Women's</a>
+    <a href="Customization.html">Customization</a>
+    <a href="about.html">About</a>
+    <a href="Contact.html">Contact</a>
+</div>
+
+<section class="contact-section">
+    <div class="contact-content">
+        <h2>Contact Us</h2>
+        <p>Have questions or concerns? Reach out to us!</p>
+
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: info@DenimsTailorMade.com</p>
+            <p>Phone: +91 987654321</p>
+            <p>Address: 123 Fashion Street, Cityville, INDIA</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

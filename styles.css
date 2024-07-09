@@ -1,0 +1,485 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+.hero h1,
+.hero p,
+.btn-shop {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+body {
+    background-color: #c6c2c2; }
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)); /* Updated gradient for a darker overlay */
+}
+
+.btn-shop,
+.btn-section {
+    /* ... (previous styles) */
+    border: 2px solid #fff; /* White border for better visibility */
+}
+
+.btn-shop:hover,
+.btn-section:hover {
+    /* ... (previous hover styles) */
+    transform: scale(1.1); /* Slightly larger scale on hover */
+}
+
+/* Parallax effect for hero section */
+.hero {
+    background-color: #141414; /* Dark background color */
+    background-image: url('your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    transition: transform 0.5s ease-out;
+}
+.hero {
+    background-color: #ffffff; /* Vibrant teal background color */
+    background-image: url('your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    transition: transform 0.5s ease-out;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInUp 3s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1,
+.hero p,
+.btn-shop {
+    opacity: 1;
+    transform: translateY(0);
+}
+.hero {
+    background-image: url('your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha channel for the desired darkness */
+}
+
+/* ... (previous CSS code) */
+
+.btn-section {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 10px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-section:hover {
+    background-color: #333;
+    color: white;
+}
+.btn-shop {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-shop:hover {
+    background-color: #e55e00;
+    transform: scale(1.05);
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6600;
+}
+
+.hero {
+    background-image: url('your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-shop {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-shop:hover {
+    background-color: #e55e00;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); /* Updated gradient for better overlay */
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInUp 1s forwards;
+    transform: translate3d(0, 0, 0); /* Hardware acceleration for smoother animations */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-shop,
+.btn-section {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-shop:hover,
+.btn-section:hover {
+    transform: scale(1.05);
+}
+
+.btn-shop {
+    background-color: #ff6600;
+    color: white;
+}
+
+.btn-shop:hover {
+    background-color: #e55e00;
+}
+
+.btn-section {
+    background-color: #fff;
+    color: #333;
+}
+
+.btn-section:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Parallax effect for hero section */
+.hero {
+    background-image: url('your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    transition: transform 0.5s ease-out;
+}
+
+.hero:hover {
+    transform: scale(1.02); /* Scale up on hover for parallax effect */
+}
+/* ... (previous CSS code) */
+
+/* Common styling for the welcome sections */
+.welcome-section {
+    background-color: #fff;
+    color: #333;
+    padding: 50px 0;
+}
+
+.welcome-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.welcome-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #008080; /* Teal color for the heading */
+}
+
+.welcome-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Animation for the welcome content */
+.welcome-content {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+    background-image: url(denim-1039513_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  p {
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1.2rem;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .contact-info {
+    margin-top: 50px;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  .contact-info p {
+    color: #000000;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .welcome-content {
+    text-align: center;
+}
+
+.customize-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3498db; /* Change the color to your preference */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.customize-button:hover {
+    background-color: #2c3e50; /* Change the hover color to your preference */
+    transform: scale(1.05);
+}
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.3s; /* Change color smoothly */
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black; /* Change text color on hover */
+}
+
+/* ... (remaining CSS code) */
+

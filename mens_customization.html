@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="men_cust_css.css">
+    <title>Denim Customization</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Your Brand</div>
+            <ul class="nav-links">
+                <!-- Add navigation links as needed -->
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="Mens.html">Men's</a></li>
+                <li><a href="Women.html">Women's</a></li>
+                <li><a href="Customization.html">Customization</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="customization-section">
+        <div class="customization-content">
+            <h2>Denim Customization</h2>
+            <p>Express your style by customizing your denim clothing. Choose from a variety of options to create a unique look that suits your taste.</p>
+            
+        </div>
+        <div class="customization-content">
+            
+
+           
+            <div class="customization-options">
+                <input type="radio" id="menFurOption" name="customizationOption" value="fur">
+                <label for="menFurOption">Fur</label>
+
+                <input type="radio" id="menWoolOption" name="customizationOption" value="wool">
+                <label for="menWoolOption">Wool</label>
+
+                <input type="radio" id="menQuiltedOption" name="customizationOption" value="quilted">
+                <label for="menQuiltedOption">Quilted</label>
+            </div>
+
+            <!-- Customization preview for Men -->
+            <div class="customization-preview">
+                <img id="menCustomizationImage" src="Wool_men_image.jpg" alt="Men's Customization Preview">
+            </div>
+        
+        
+       
+        </div>
+        
+        </div>
+        
+    </section>
+    <script>
+      
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const customizationOptions = document.querySelectorAll('input[name="customizationOption"]');
+            const previewImage = document.getElementById('menCustomizationImage');
+    
+            customizationOptions.forEach(option => {
+                option.addEventListener('change', function () {
+                    const selectedOption = document.querySelector('input[name="customizationOption"]:checked').value;
+                    previewImage.src = `${selectedOption}_men_image.jpg`; // Replace with actual image filenames
+                });
+            });
+        });
+        
+
+     
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Your Brand. All rights reserved.</p>
+    </footer>
+</body>
+</html>

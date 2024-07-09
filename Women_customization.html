@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="women_cust_css.css">
+    <title>Welcome to Women's Section</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Your Brand</div>
+            <ul class="nav-links">
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="Mens.html">Men's</a></li>
+                <li><a href="Women.html">Women's</a></li>
+                <li><a href="Customization.html">Customization</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="customization-section">
+        <div class="customization-content">
+            <h2>Denim Customization</h2>
+            <p>Express your style by customizing your denim clothing. Choose from a variety of options to create a unique look that suits your taste.</p>
+            
+        </div>
+        <div class="customization-options">
+            <input type="radio" id="furOption" name="customizationOption" value="fur">
+            <label for="furOption">Fur</label>
+        
+            <input type="radio" id="woolOption" name="customizationOption" value="wool">
+            <label for="woolOption">Wool</label>
+        
+            <input type="radio" id="quiltedOption" name="customizationOption" value="quilted">
+            <label for="quiltedOption">Quilted</label>
+        </div>
+        
+        <div class="customization-preview">
+            <img id="customizationImage" src="women_default.jpg" alt="Customization Preview">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Brand. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const customizationOptions = document.querySelectorAll('input[name="customizationOption"]');
+            const previewImage = document.getElementById('customizationImage');
+    
+            customizationOptions.forEach(option => {
+                option.addEventListener('change', function () {
+                    const selectedOption = document.querySelector('input[name="customizationOption"]:checked').value;
+                    previewImage.src = `${selectedOption}_image.jpg`; // Replace with actual image filenames
+                });
+            });
+        });
+    </script>
+</body>
+</html>

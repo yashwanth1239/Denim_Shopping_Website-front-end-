@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clothing Customization</title>
+<style>
+    /* Basic styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url(denim-1039513_1280.jpg);
+        margin: 0;
+        padding: 0;
+    }
+    .navbar {
+        background-color: #333;
+        overflow: hidden;
+    }
+    .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        transition: color 0.3s; /* Change color smoothly */
+    }
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black; /* Change text color on hover */
+    }
+    .container {
+        width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+        font-weight: bold;
+        color: #333;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    input[type="text"], textarea, select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    textarea {
+        resize: none;
+    }
+    .submit-btn {
+        display: block;
+        margin: 0 auto; /* This centers the button horizontally */
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .submit-btn:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index1.html">Home</a>
+    <a href="Mens.html">Men's</a>
+    <a href="Women.html">Women's</a>
+    <a href="Customization.html">Customization</a>
+    <a href="about.html">About</a>
+    <a href="Contact.html">Contact</a>
+</div>
+
+<div class="container">
+    <h2>Clothing Customization</h2>
+    <form id="customization-form">
+        <label for="gender">Select Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="age">Select Age:</label>
+        <input type="number" id="age" name="age" min="0" max="120">
+
+        <label for="description">Describe What You Want:</label>
+        <textarea id="description" name="description" rows="4"></textarea>
+
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

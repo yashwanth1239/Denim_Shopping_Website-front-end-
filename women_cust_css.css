@@ -1,0 +1,115 @@
+/* women_customization.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e74c3c; /* Change the color to your preference */
+    color: #fff;
+    padding: 15px;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.customization-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.customization-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.customization-content h2 {
+    color: #333;
+}
+
+.customization-content p {
+    color: #555;
+}
+
+.customize-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #e74c3c; /* Change the color to your preference */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.customize-button:hover {
+    background-color: #c0392b; /* Change the hover color to your preference */
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #e74c3c; /* Change the color to your preference */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+/* Add this to women_customization.css */
+.customization-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.customization-options input {
+    display: none;
+}
+
+.customization-options label {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #3498db; /* Change the color to your preference */
+    color: #fff;
+    border-radius: 5px;
+}
+
+.customization-options input:checked + label {
+    background-color: #2c3e50; /* Change the selected color to your preference */
+}
+
+.customization-preview {
+    margin-top: 20px;
+}
+
+#customizationImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
